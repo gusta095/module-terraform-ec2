@@ -20,7 +20,7 @@ variable "key_name" {
 
 variable "subnet_id" {
   type    = string
-  default = ""
+  default = "subnet-7424135a"
 }
 
 variable "security_groups" {
