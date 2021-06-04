@@ -14,6 +14,7 @@ resource "aws_instance" "gusta-ec2" {
 resource "aws_security_group" "gusta-sg" {
   description = var.description
   name        = var.name
+  vpc_id      = var.vpc_id
 
   ingress {
     from_port   = 443

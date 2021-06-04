@@ -45,3 +45,7 @@ variable "name" {
 variable "tags-sg" {
   default = "gusta-sg"
 }
+
+variable "vpc_id" {
+  default     = "vpc-0000000000"
+}
