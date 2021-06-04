@@ -4,7 +4,7 @@ resource "aws_instance" "gusta-ec2" {
   instance_type   = var.instance_type
   key_name        = var.key_name
   subnet_id       = var.subnet_id
-  security_groups = aws_security_group.gusta-sg.id
+  security_groups = [aws_security_group.gusta-sg.id]
 
   tags = {
     Name = "${var.tags}-${count.index + 1}"
