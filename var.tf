@@ -25,7 +25,7 @@ variable "subnet_id" {
 
 variable "security_groups" {
   type    = string
-  default = ""
+  default = "sg-00000000"
 }
 
 variable "tags" {
