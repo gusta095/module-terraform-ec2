@@ -31,3 +31,17 @@ variable "security_groups" {
 variable "tags" {
   default = "gusta-ec2"
 }
+
+#### SG ####
+
+variable "description" {
+  default = "Libera todo o trafego"
+}
+
+variable "name" {
+  default = "gusta-sg"
+}
+
+variable "tags-sg" {
+  default = "gusta-sg"
+}
